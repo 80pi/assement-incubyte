@@ -27,4 +27,4 @@ export function addNumberInString(data: string) {
   else return sum;
 }
 
-console.log(addNumberInString("//[*][%]\n1*2%3"));
+console.log(addNumberInString("//[**][%%]\n1**2%%3"));

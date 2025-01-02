@@ -33,4 +33,7 @@ describe("Adding Number passed in strings", () => {
   it("Allow multiple delimiters like this", () => {
     expect(addNumberInString("“//[*][%]\n1*2%3")).toBe(6);
   });
+  it("handle multiple delimiters with lenght larger than one character", () => {
+    expect(addNumberInString("//[**][%%]\n1**2%%3")).toBe(6);
+  });
 });
