@@ -30,4 +30,7 @@ describe("Adding Number passed in strings", () => {
   it("Delimiters can be of any length with the following format", () => {
     expect(addNumberInString("//[***]\n1***2***3")).toBe(6);
   });
+  it("Allow multiple delimiters like this", () => {
+    expect(addNumberInString("“//[*][%]\n1*2%3")).toBe(6);
+  });
 });
