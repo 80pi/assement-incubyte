@@ -4,7 +4,6 @@ interface NegativeMessageProps {
 }
 export function addNumberInString(data: string) {
   const arr: string[] = data.split(/[ .:;?!~,`"&|()*<>{}%\[\]\r\n/\\]+/);
-  console.log("aaa", arr);
   let sum: number = 0;
   let negativeMessage: NegativeMessageProps = {
     flag: false,
@@ -27,4 +26,4 @@ export function addNumberInString(data: string) {
   else return sum;
 }
 
-console.log(addNumberInString("//[**][%%]\n1**2%%3"));
+addNumberInString("//[**][%%]\n1**2%%3");
