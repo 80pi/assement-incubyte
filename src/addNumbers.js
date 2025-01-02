@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.addNumberInString = addNumberInString;
 function addNumberInString(data) {
-    var arr = data.split(/[ .:;?!~,`"&|()<>{}\[\]\r\n/\\]+/);
+    var arr = data.split(/[ .:;?!~,`"&|()*<>{}\[\]\r\n/\\]+/);
     console.log("aaa", arr);
     var sum = 0;
     var negativeMessage = {
@@ -27,4 +27,4 @@ function addNumberInString(data) {
     else
         return sum;
 }
-console.log(addNumberInString("1,-3,2,-9,4"));
+console.log(addNumberInString("//[***]\n1***2***3"));

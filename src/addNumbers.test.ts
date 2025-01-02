@@ -27,4 +27,7 @@ describe("Adding Number passed in strings", () => {
       "negatives not allowed -3,-9"
     );
   });
+  it("Delimiters can be of any length with the following format", () => {
+    expect(addNumberInString("//[***]\n1***2***3")).toBe(6);
+  });
 });

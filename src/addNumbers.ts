@@ -3,7 +3,7 @@ interface NegativeMessageProps {
   value: string[];
 }
 export function addNumberInString(data: string) {
-  const arr: string[] = data.split(/[ .:;?!~,`"&|()<>{}\[\]\r\n/\\]+/);
+  const arr: string[] = data.split(/[ .:;?!~,`"&|()*<>{}\[\]\r\n/\\]+/);
   console.log("aaa", arr);
   let sum: number = 0;
   let negativeMessage: NegativeMessageProps = {
@@ -27,4 +27,4 @@ export function addNumberInString(data: string) {
   else return sum;
 }
 
-console.log(addNumberInString("1,-3,2,-9,4"));
+console.log(addNumberInString("//[***]\n1***2***3"));
